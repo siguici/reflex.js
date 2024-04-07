@@ -1,0 +1,8 @@
+# Build
+out/deno/*
+out/node/*
+!out/deno/jsr.json
+!out/node/package.json
+
+# Development
+node_modules/

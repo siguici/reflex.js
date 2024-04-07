@@ -1,0 +1,38 @@
+{
+  "name": "reflex.js",
+  "version": "0.0.0",
+  "private": false,
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://npmjs.com/package/reflex.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siguici/reflex.js"
+  },
+  "bugs": "https://github.com/siguici/reflex.js/issues",
+  "author": {
+    "name": "Sigui Kessé Emmanuel",
+    "email": "siguici@proton.me",
+    "url": "https://sigui.deno.dev"
+  },
+  "keywords": [
+    "reflex",
+    "reflex.js",
+    "di",
+    "ioc",
+    "container",
+    "dependency-injection",
+    "inversion-of-control"
+  ],
+  "files": ["js", "ts"],
+  "module": "./js/index.js",
+  "main": "./js/index.js",
+  "types": "./ts/",
+  "exports": {
+    ".": "./js/index.js",
+    "./package.json": "./package.json",
+    "./README.md": "./README.md"
+  }
+}

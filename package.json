@@ -1,0 +1,35 @@
+{
+  "private": true,
+  "type": "module",
+  "engines": {
+    "bun": ">=1.1.2"
+  },
+  "packageManager": "bun@1.1.2",
+  "scripts": {
+    "build": "bun run build.node && bun run build.deno",
+    "build.deno": "cp README.md LICENSE.md out/deno && rimraf out/deno/**/*.ts && denoify --src src --out out/deno && rimraf out/deno/*.test.ts",
+    "build.node": "cp README.md LICENSE.md out/node && rimraf out/node/ts out/node/ts && tsc --build",
+    "check": "biome ci .",
+    "fix": "bun run format.fix && bun run lint.fix",
+    "format": "biome format .",
+    "format.fix": "biome format --write .",
+    "lint": "biome check .",
+    "lint.fix": "biome check --apply-unsafe .",
+    "start": "bun --hot app/start.tsx",
+    "serve": "bun app/start.tsx",
+    "test": "bun test",
+    "test.cov": "bun test --coverage",
+    "test.hot": "bun test --hot",
+    "test.watch": "bun test --watch",
+    "type.check": "tsc --incremental --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.6.4",
+    "@types/bun": "^1.0.12",
+    "@types/node": "^20.12.5",
+    "denoify": "^1.6.9",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.4.4"
+  },
+  "trustedDependencies": ["@biomejs/biome"]
+}

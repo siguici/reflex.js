@@ -1,0 +1,9 @@
+{
+  "name": "@siguici/reflex",
+  "version": "0.0.0",
+  "exports": "./src/index.ts",
+  "publish": {
+    "include": ["README.md", "src/**/*.ts"],
+    "exclude": ["src/**/*.test.ts"]
+  }
+}
