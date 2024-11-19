@@ -24,12 +24,12 @@
     "type.check": "tsc --incremental --noEmit"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.6.4",
-    "@types/bun": "^1.0.12",
-    "@types/node": "^20.12.5",
-    "denoify": "^1.6.9",
-    "rimraf": "^5.0.5",
-    "typescript": "^5.4.4"
+    "@biomejs/biome": "^1.9.4",
+    "@types/bun": "^1.2.9",
+    "@types/node": "^22.14.1",
+    "denoify": "^1.6.17",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
   },
   "trustedDependencies": ["@biomejs/biome"]
 }
